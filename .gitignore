@@ -1,0 +1,71 @@
+# ==========================
+# LaTeX (論文・ドキュメント)
+# ==========================
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc
+*.lot
+*.lof
+*.dvi
+*.ps
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+# *.pdf  # PDFもGit管理したい場合はこのまま(#あり)。管理しないなら#を外す
+
+# ==========================
+# Python (スクリプト・分析)
+# ==========================
+# バイトコード(キャッシュ)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 仮想環境 (venvなど)
+# 一般的なフォルダ名を網羅しています
+venv/
+env/
+.venv/
+.env/
+
+# Jupyter Notebook
+# チェックポイントファイル（自動保存の履歴）は不要
+.ipynb_checkpoints/
+
+# 配布・パッケージ化関連
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# ==========================
+# Data & Config (データ・設定)
+# ==========================
+# 【重要】APIキーなど機密情報を含むファイルは絶対コミットしない
+.env
+config.py
+secrets.json
+
+# 大きなデータセットはGitで管理すべきではない (Git LFSを使う場合を除く)
+# 必要に応じて拡張子を追加してください
+*.csv
+*.xlsx
+*.pkl
+*.h5
+*.sqlite3
+
+# ==========================
+# VS Code & Editor
+# ==========================
+.vscode/
+# !.vscode/settings.json
+# !.vscode/tasks.json
+.idea/
+.DS_Store
+Thumbs.db
